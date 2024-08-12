@@ -1,0 +1,50 @@
+body {
+    background-color: darkslategray;
+}
+
+.container {
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+
+    margin: 0 auto;
+    transform: translateY(50%);
+
+    /* outline: 1px solid red; */
+}
+
+.box {
+    position: relative;
+
+    width: 98px;
+    height: 98px;
+
+    background: darkcyan;
+
+    border: 2px solid darkseagreen;
+    border-radius: 5px;
+
+    padding: 0;
+    margin: 0;
+
+        animation: box-moving 3s linear 0.5s infinite normal none;
+}
+
+@keyframes box-moving {
+    25% {
+        transform: translate(0, 400px);
+    }
+
+    50% {
+        transform: translate(400px, 400px);
+    }
+
+    75% {
+        transform: translate(400px, 0px);
+    }
+
+    100% {
+        transform: translate(-10px, 0px);
+    }
+}
